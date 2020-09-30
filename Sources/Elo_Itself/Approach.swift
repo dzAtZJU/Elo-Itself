@@ -31,6 +31,8 @@ public struct Comparative: Approach {
 }
 
 public struct Semantic_Discrimination: Approach {
+    public init() {}
+    
     public var legitimacy: String = ""
     
     public var constrainedBy: [Tool] = [YoudaoDict()]
