@@ -5,7 +5,7 @@
 //  Created by Zhou Wei Ran on 2020/9/25.
 //  Copyright © 2020 Paper Scratch. All rights reserved.
 //
-protocol Approach {
+public protocol Approach {
     var constrainedBy: [Tool] {
         get
     }
@@ -14,7 +14,7 @@ protocol Approach {
         get
     }
 }
-protocol Tool {
+public protocol Tool {
     
 }
 
@@ -24,17 +24,18 @@ struct Way_Of_Project: Approach {
     var constrainedBy: [Tool] = []
 }
 
-struct Comparative: Approach {
-    var legitimacy: String = ""
+public struct Comparative: Approach {
+    public var legitimacy: String = ""
     
-    var constrainedBy: [Tool] = []
+    public var constrainedBy: [Tool] = []
 }
 
-struct Semantic_Discrimination: Approach {
-    var legitimacy: String = ""
+public struct Semantic_Discrimination: Approach {
+    public var legitimacy: String = ""
     
-    var constrainedBy: [Tool] = [YoudaoDict()]
-}
-struct YoudaoDict: Tool {
+    public var constrainedBy: [Tool] = [YoudaoDict()]
     
+    struct YoudaoDict: Tool {
+        
+    }
 }
