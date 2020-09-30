@@ -1,20 +1,20 @@
-protocol Has_Critaria {
+public protocol Has_Critaria {
     var critaria: [String] {
         get
     }
 }
 
-protocol Has_Tasks {
+public protocol Has_Tasks {
     var tasks: [Task] {
         get
     }
 }
 
-protocol Has_AfterTasks {
+public protocol Has_AfterTasks {
     var afterTasks: [Task] {
         get
     }
 }
 
-protocol Task {}
+public protocol Task {}
 
