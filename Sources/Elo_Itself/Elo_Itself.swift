@@ -16,5 +16,11 @@ public protocol Has_AfterTasks {
     }
 }
 
+public protocol Has_PreventiveTasks {
+    var preventiveTasks: [Task] {
+        get
+    }
+}
+
 public protocol Task {}
 
