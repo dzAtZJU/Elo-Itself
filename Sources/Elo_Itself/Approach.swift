@@ -19,7 +19,19 @@ public protocol Tool {
 }
 
 struct Way_Of_Project: Approach {
-    var legitimacy: String = "Unique situations come sparsely, thus recording is nessary. When future recording comes and wants to connect, Impression is strengthened and Innovation is born."
+    var legitimacy: String = "Unique situations come sparsely, thus recording is nessary."
+    
+    var constrainedBy: [Tool] = []
+}
+
+struct Add_Connection: Approach, Has_Critaria {
+    var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born."
+    
+    var critaria: [String] = {
+        var tmp = [String]()
+        tmp.append("guided by my view of life and values")
+        return tmp
+    }()
     
     var constrainedBy: [Tool] = []
 }
@@ -39,5 +51,15 @@ public struct Semantic_Discrimination: Approach {
     
     struct YoudaoDict: Tool {
         
+    }
+}
+
+public protocol Require_Detach_and_Witness {
+    var semantic_product: String? {
+        get
+    }
+    
+    var obstacles: [String] {
+        get
     }
 }
