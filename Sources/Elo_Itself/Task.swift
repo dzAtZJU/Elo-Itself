@@ -4,6 +4,12 @@ public protocol Task {
     }
 }
 
+extension Task {
+    var perspective: Perspective? {
+        nil
+    }
+}
+
 public protocol Has_Tasks {
     var tasks: [Task] {
         get
