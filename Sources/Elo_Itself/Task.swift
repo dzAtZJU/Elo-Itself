@@ -1,5 +1,5 @@
-public protocol Has_Critaria {
-    var critaria: [String] {
+public protocol Task {
+    var perspective: Perspective? {
         get
     }
 }
@@ -22,5 +22,8 @@ public protocol Has_PreventiveTasks {
     }
 }
 
-public protocol Task {}
-
+public protocol Has_Critaria {
+    var critaria: [String] {
+        get
+    }
+}
