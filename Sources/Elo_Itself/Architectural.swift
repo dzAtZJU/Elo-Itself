@@ -26,6 +26,10 @@ public protocol Architectural {
 }
 
 public struct Throughput {
+    internal init(max: Int = 0) {
+        self.max = max
+    }
+    
     public var max = 0
 }
 
@@ -40,7 +44,7 @@ public protocol Affect_Throughput {
 }
 
 public struct Circuitry {
-    
+    public init() {}
 }
 
 public enum Effect {
@@ -63,7 +67,7 @@ public struct Cost {
     public var money: CostType
     public var efforts: CostType
     
-    init(money: Satisfaction, efforts: Satisfaction) {
+    public init(money: Satisfaction, efforts: Satisfaction) {
         self.money = .Money(money)
         self.efforts = .Efforts(efforts)
     }
