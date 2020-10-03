@@ -37,7 +37,7 @@ struct Add_Connection: Approach, Has_Critaria {
 }
 
 public struct Comparative: Approach {
-    internal init(legitimacy: String = "", constrainedBy: [Tool] = []) {
+    public init(legitimacy: String = "", constrainedBy: [Tool] = []) {
         self.legitimacy = legitimacy
         self.constrainedBy = constrainedBy
     }

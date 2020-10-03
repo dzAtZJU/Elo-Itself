@@ -26,7 +26,7 @@ public protocol Architectural {
 }
 
 public struct Throughput {
-    internal init(max: Int = 0) {
+    public init(max: Int = 0) {
         self.max = max
     }
     
