@@ -4,7 +4,7 @@ public protocol Task {
     }
 }
 
-extension Task {
+public extension Task {
     var perspective: Perspective? {
         nil
     }
