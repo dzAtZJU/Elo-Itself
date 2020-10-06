@@ -25,7 +25,7 @@ struct Way_Of_Project: Approach {
 }
 
 struct Add_Connection: Approach, Has_Critaria {
-    var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born."
+    var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
     
     var critaria: [String] = {
         var tmp = [String]()

@@ -19,11 +19,7 @@ public enum Discovering_Friendliness {
     case terrible
 }
 
-public protocol Architectural {
-    var throughput: Throughput {
-        get
-    }
-}
+public protocol Architectural {}
 
 public struct Throughput {
     public init(max: Int = 0) {
