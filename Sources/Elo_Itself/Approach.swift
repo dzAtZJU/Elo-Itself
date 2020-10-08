@@ -47,7 +47,7 @@ public struct Comparative: Approach {
     public var constrainedBy: [Tool] = []
 }
 
-public struct Semantic_Discrimination: Approach {
+public struct Semantic_Discrimination: Approach, Task {
     public init() {}
     
     public var legitimacy: String = ""
@@ -67,4 +67,15 @@ public protocol Require_Detach_and_Witness {
     var obstacles: [String] {
         get
     }
+}
+
+public protocol To_Manifest {}
+public protocol Can_Manifest {
+    var canManifest: To_Manifest {
+        get
+    }
+}
+
+public struct Behavior_and_Cognitive_Pattern: To_Manifest {
+    public init() {}
 }
