@@ -37,6 +37,8 @@ struct Add_Connection: Approach, Has_Critaria {
 }
 
 public struct Organize_as_Tree: Approach {
+    public init() {}
+    
     public var constrainedBy: [Tool] = []
     
     public var legitimacy: String = "This is how human thinking, I guess."
