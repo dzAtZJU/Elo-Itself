@@ -37,3 +37,10 @@ public protocol Operable {
 public protocol IndividualAble: Task {}
 public protocol SymbiosisAble: Task {}
 public protocol Humankindable: Task {}
+
+public protocol Plant {}
+public protocol Earthquake {}
+
+struct Bloom: Plant {}
+
+struct Subversion: Earthquake {}
