@@ -5,8 +5,8 @@
 //  Created by Zhou Wei Ran on 2020/10/9.
 //
 
-public protocol Has_Critarias {
-    var critarias: [String] {
+public protocol Has_Criterias {
+    var criterias: [String] {
         get
     }
 }

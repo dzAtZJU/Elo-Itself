@@ -37,10 +37,10 @@ struct Way_Of_Project: Approach {
     var constrainedBy: [Tool] = []
 }
 
-struct Add_Connection: Approach, Has_Critarias {
+struct Add_Connection: Approach, Has_Criterias {
     var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
     
-    var critarias: [String] = {
+    var criterias: [String] = {
         var tmp = [String]()
         tmp.append("guided by my view of life and values")
         return tmp
