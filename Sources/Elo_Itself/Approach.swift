@@ -76,9 +76,15 @@ public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks {
     
     public init() {}
     
+    public init(perspectives: [Perspective]) {
+        self.perspectives.append(contentsOf: perspectives)
+    }
+    
     public var legitimacy: String = ""
     
     public var constrainedBy: [Tool] = [YoudaoDict()]
+    
+    public var perspectives: [Perspective] = []
     
     struct YoudaoDict: Tool {
         

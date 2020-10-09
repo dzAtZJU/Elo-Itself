@@ -1,11 +1,11 @@
 public protocol Task {
-    var perspective: [Perspective] {
+    var perspectives: [Perspective] {
         get
     }
 }
 
 public extension Task {
-    var perspective: [Perspective] {
+    var perspectives: [Perspective] {
         []
     }
 }
