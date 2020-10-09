@@ -91,6 +91,22 @@ public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks {
     }
 }
 
+public struct Experiment: Task, Approach, Has_Tasks {
+    public init() {}
+    
+    public init(tasks: [Task], perspectives: [Perspective]) {
+        self.tasks = tasks
+        self.perspectives = perspectives
+    }
+    public var constrainedBy: [Tool] = []
+    
+    public var legitimacy: String = "Like the sky, it covers those can't seen by the appproatch semantic discrimination."
+    
+    public var tasks: [Task] = []
+    
+    public var perspectives: [Perspective] = []
+}
+
 public struct Behavior_and_Cognitive_Pattern: To_Manifest {
     public var manifesters: [Task] = []
     
