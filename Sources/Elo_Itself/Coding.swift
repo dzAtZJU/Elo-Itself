@@ -12,4 +12,5 @@ public enum Coding_Principle: String {
     case Defer_Abstract = "If there will be patterns, let them emerge themselves."
     case Protocol_and_Enum_for_Prominence = "."
     case Civilization_Polishing_and_Expanding = "Concepts moves from individual to human-generations. What breaks and innovates are Methods."
+    case Relentless_ConnectionTransparency = "Even for those new small edges which are easy for brain"
 }
