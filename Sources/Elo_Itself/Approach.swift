@@ -14,8 +14,21 @@ public protocol Approach {
         get
     }
 }
-public protocol Tool {
+public protocol Tool {}
+public protocol Require_Detach_and_Witness {
+    var semantic_product: String? {
+        get
+    }
     
+    var obstacles: [String] {
+        get
+    }
+}
+public protocol To_Manifest {}
+public protocol Can_Manifest {
+    var canManifest: To_Manifest {
+        get
+    }
 }
 
 struct Way_Of_Project: Approach {
@@ -24,10 +37,10 @@ struct Way_Of_Project: Approach {
     var constrainedBy: [Tool] = []
 }
 
-struct Add_Connection: Approach, Has_Critaria {
+struct Add_Connection: Approach, Has_Critarias {
     var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
     
-    var critaria: [String] = {
+    var critarias: [String] = {
         var tmp = [String]()
         tmp.append("guided by my view of life and values")
         return tmp
@@ -64,23 +77,6 @@ public struct Semantic_Discrimination: Approach, Task {
     
     struct YoudaoDict: Tool {
         
-    }
-}
-
-public protocol Require_Detach_and_Witness {
-    var semantic_product: String? {
-        get
-    }
-    
-    var obstacles: [String] {
-        get
-    }
-}
-
-public protocol To_Manifest {}
-public protocol Can_Manifest {
-    var canManifest: To_Manifest {
-        get
     }
 }
 

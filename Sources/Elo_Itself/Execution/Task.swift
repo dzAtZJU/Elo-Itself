@@ -28,8 +28,12 @@ public protocol Has_PreventiveTasks {
     }
 }
 
-public protocol Has_Critaria {
-    var critaria: [String] {
+public protocol Operable {
+    var handler: [Task] {
         get
     }
 }
+
+public protocol IndividualAble: Task {}
+public protocol SymbiosisAble: Task {}
+public protocol Humankindable: Task {}
