@@ -67,7 +67,13 @@ public struct Comparative: Approach {
     public var constrainedBy: [Tool] = []
 }
 
-public struct Semantic_Discrimination: Approach, Task {
+public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks {
+    public var drawbacks: [String] = {
+        var tmp = [String]()
+        tmp.append("blind to insidious problems")
+        return tmp
+    }()
+    
     public init() {}
     
     public var legitimacy: String = ""
