@@ -24,9 +24,8 @@ public protocol Require_Detach_and_Witness {
         get
     }
 }
-public protocol To_Manifest {}
-public protocol Can_Manifest {
-    var canManifest: To_Manifest {
+public protocol To_Manifest {
+    var manifesters: [Task] {
         get
     }
 }
@@ -81,5 +80,7 @@ public struct Semantic_Discrimination: Approach, Task {
 }
 
 public struct Behavior_and_Cognitive_Pattern: To_Manifest {
+    public var manifesters: [Task] = []
+    
     public init() {}
 }
