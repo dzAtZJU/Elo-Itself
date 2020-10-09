@@ -10,7 +10,7 @@ public protocol Has_Critarias {
         get
     }
 }
-protocol Has_Drawbacks {
+public protocol Has_Drawbacks {
     var drawbacks: [String] {
         get
     }
