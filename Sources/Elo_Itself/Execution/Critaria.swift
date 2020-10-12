@@ -8,7 +8,7 @@
 public protocol Criteria {}
 
 public protocol Has_Criterias {
-    var criterias: [String] {
+    var criterias: [Any] {
         get
     }
 }
