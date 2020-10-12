@@ -68,3 +68,20 @@ public struct Cost {
         self.efforts = .Efforts(efforts)
     }
 }
+
+public protocol Attribute {
+    var succeed: [Attribute] {
+        get
+    }
+    var infra: [Infra] {
+        get
+    }
+}
+
+public struct Concepts_Prominence: Attribute {
+    public init() {}
+    
+    public var succeed: [Attribute] = []
+    
+    public var infra: [Infra] = []
+}
