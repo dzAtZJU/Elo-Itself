@@ -1,9 +1,9 @@
-public struct Temperament: Criteria {
+public protocol Flow {}
+
+public struct Temperament: Flow, Criteria {
     public init() {}
 }
 
-public struct TemporalSpace_Arrangement: Has_Criterias {
-    public init() {}
+public protocol Timing {}
 
-    public var criterias: [Any] = [Temperament()]
-}
+public protocol Venturing {}
