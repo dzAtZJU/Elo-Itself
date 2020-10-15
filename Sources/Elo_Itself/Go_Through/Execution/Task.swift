@@ -2,10 +2,18 @@ public protocol Task {
     var perspectives: [Perspective] {
         get
     }
+    
+    var resources: [Resource] {
+        get
+    }
 }
 
 public extension Task {
     var perspectives: [Perspective] {
+        []
+    }
+    
+    var resources: [Resource] {
         []
     }
 }
