@@ -1,10 +1,3 @@
-//
-//  Attribute.swift
-//  Semantics
-//
-//  Created by Zhou Wei Ran on 2020/9/6.
-//  Copyright © 2020 Paper Scratch. All rights reserved.
-//
 public protocol Architectural {}
 
 public protocol Affect_Throughput {
@@ -74,6 +67,12 @@ public protocol Attribute {
         get
     }
     var infra: [Infra] {
+        get
+    }
+}
+
+public protocol Require_Attributes {
+    var attributes: [Attribute] {
         get
     }
 }
