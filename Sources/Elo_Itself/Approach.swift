@@ -30,10 +30,12 @@ public protocol To_Manifest {
     }
 }
 
-struct Way_Of_Project: Approach, Task {
-    var legitimacy: String = "Unique situations come sparsely, thus recording is nessary."
+public struct Way_Of_Project: Approach, Task {
+    public init() {}
     
-    var constrainedBy: [Tool] = [Xcode_and_Swift()]
+    public var legitimacy: String = "Unique situations come sparsely, thus recording is nessary."
+    
+    public var constrainedBy: [Tool] = [Xcode_and_Swift()]
     
     struct Xcode_and_Swift: Tool {}
 }
