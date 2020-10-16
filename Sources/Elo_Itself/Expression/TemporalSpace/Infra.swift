@@ -17,6 +17,12 @@ public extension Infra {
     }
 }
 
+public protocol Require_Infras {
+    var infras: [Infra] {
+        get
+    }
+}
+
 public struct TemporalSpace_Arrangement: Infra, Has_Criterias {
     public init() {}
 
