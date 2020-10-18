@@ -7,3 +7,5 @@ public struct Temperament: Flow, Criteria {
 public protocol Timing {}
 
 public protocol Venturing {}
+
+public protocol MicroEnvironment {}
