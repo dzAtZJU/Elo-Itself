@@ -23,6 +23,9 @@ public protocol Require_Infras {
     }
 }
 
+public protocol TemporalSpace {}
+
+
 public protocol TemporalSpace_Arrangement: Infra, Has_Criterias {}
 
 public extension TemporalSpace_Arrangement {
