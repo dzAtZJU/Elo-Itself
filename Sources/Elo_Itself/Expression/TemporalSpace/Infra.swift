@@ -23,8 +23,8 @@ public protocol Require_Infras {
     }
 }
 
-public struct TemporalSpace_Arrangement: Infra, Has_Criterias {
-    public init() {}
+public protocol TemporalSpace_Arrangement: Infra, Has_Criterias {}
 
-    public var criterias: [Any] = [Temperament()]
+public extension TemporalSpace_Arrangement {
+    var criterias: [Any] { [Temperament()] }
 }
