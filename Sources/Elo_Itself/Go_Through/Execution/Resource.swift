@@ -5,9 +5,9 @@
 //  Created by Zhou Wei Ran on 2020/10/15.
 //
 
-public protocol MarketMember {}
+public protocol MarketItem {}
 
-public protocol Resource: MarketMember {}
+public protocol Resource: MarketItem {}
 
 
 
