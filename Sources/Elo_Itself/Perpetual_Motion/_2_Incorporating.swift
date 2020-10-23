@@ -42,12 +42,6 @@ public protocol Require_Detach_and_Witness {
     }
 }
 
-public struct Behavior_and_Cognitive_Pattern: To_Manifest {
-    public var manifesters: [Task] = []
-    
-    public init() {}
-}
-
 struct Add_Connection: Approach, Has_Criterias {
     var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
     

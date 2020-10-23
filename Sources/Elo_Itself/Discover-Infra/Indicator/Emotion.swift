@@ -1,15 +1,9 @@
-public protocol Feeling {}
+public protocol Feeling: Indicator {}
 
-public protocol Emotion {}
+public protocol Emotion: Indicator {}
 
 public struct Curious: Feeling {
     public init() {}
-}
-
-public protocol To_Manifest {
-    var manifesters: [Task] {
-        get
-    }
 }
 
 // MARK: Emotion Infra
