@@ -2,8 +2,13 @@ public protocol Feeling: Indicator {}
 
 public protocol Emotion: Indicator {}
 
-public struct Curious: Feeling {
+public struct Curious: Emotion {
     public init() {}
+}
+
+public struct Anxious: Emotion {
+    public init() {}
+    public var indicates: Any? = Unknown_by_Thinking()
 }
 
 // MARK: Emotion Infra
