@@ -1,5 +1,29 @@
 public protocol Architectural {}
 
+public protocol Attribute {
+    var succeed: [Attribute] {
+        get
+    }
+    var infra: [Infra] {
+        get
+    }
+}
+
+public protocol Require_Attributes {
+    var attributes: [Attribute] {
+        get
+    }
+}
+
+public struct Concepts_Prominence: Attribute {
+    public init() {}
+    
+    public var succeed: [Attribute] = []
+    
+    public var infra: [Infra] = []
+}
+
+// MARK: Specifics
 public protocol Affect_Throughput {
     var effect: Effect {
         get
@@ -60,27 +84,4 @@ public struct Cost {
         self.money = .Money(money)
         self.efforts = .Efforts(efforts)
     }
-}
-
-public protocol Attribute {
-    var succeed: [Attribute] {
-        get
-    }
-    var infra: [Infra] {
-        get
-    }
-}
-
-public protocol Require_Attributes {
-    var attributes: [Attribute] {
-        get
-    }
-}
-
-public struct Concepts_Prominence: Attribute {
-    public init() {}
-    
-    public var succeed: [Attribute] = []
-    
-    public var infra: [Infra] = []
 }
