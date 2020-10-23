@@ -21,7 +21,6 @@ struct Concerned: Emotion {
     public init() {}
 }
 
-
 // MARK: Emotion Infra
 public protocol TemporalSpace {}
 

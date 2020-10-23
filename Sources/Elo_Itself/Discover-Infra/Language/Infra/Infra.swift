@@ -15,3 +15,7 @@ public protocol Require_Infras {
         get
     }
 }
+
+public enum Infra_Type {
+    case Language
+}
