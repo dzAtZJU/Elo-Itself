@@ -40,6 +40,15 @@ public protocol Operable {
     var handler: [Task] {
         get
     }
+    
+    var consequence_of_failing: Any? {
+        get
+    }
+}
+public extension Operable {
+    var consequence_of_failing: Any? {
+        nil
+    }
 }
 
 public protocol IndividualAble: Task {}

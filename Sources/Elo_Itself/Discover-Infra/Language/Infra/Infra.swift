@@ -18,4 +18,8 @@ public protocol Require_Infras {
 
 public enum Infra_Type {
     case Language
+    case App
+    case Community
+    case Rule
+    case Policy
 }
