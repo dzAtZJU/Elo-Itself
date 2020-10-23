@@ -1,15 +1,26 @@
-public protocol Feeling: Indicator {}
-
 public protocol Emotion: Indicator {}
-
-public struct Curious: Emotion {
-    public init() {}
-}
 
 public struct Anxious: Emotion {
     public init() {}
     public var indicates: Any? = Unknown_by_Thinking()
 }
+
+public struct Creative_Desire: Emotion {
+    public init() {}
+}
+
+public struct Repulsion: Emotion {
+    public init() {}
+}
+
+public struct Curious: Emotion {
+    public init() {}
+}
+
+struct Concerned: Emotion {
+    public init() {}
+}
+
 
 // MARK: Emotion Infra
 public protocol TemporalSpace {}
