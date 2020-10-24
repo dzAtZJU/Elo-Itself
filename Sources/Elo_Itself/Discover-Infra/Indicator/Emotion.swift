@@ -11,6 +11,18 @@ public struct Creative_Desire: Emotion {
 
 public struct Repulsion: Emotion {
     public init() {}
+    
+    public var indicates: Any? = Not_Immediate()
+    
+    public struct Not_Immediate {}
+}
+
+public struct Agitated: Emotion {
+    public init() {}
+    
+    public var indicates: Any? = Not_Satisfied()
+    
+    public struct Not_Satisfied {}
 }
 
 public struct Curious: Emotion {

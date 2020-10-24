@@ -9,5 +9,6 @@ extension Phenomena {
     }
 }
 
+struct Unknown_by_Thinking: Phenomena {} 
 
-struct Unknown_by_Thinking: Phenomena {}
+

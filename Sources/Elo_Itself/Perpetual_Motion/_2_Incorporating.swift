@@ -8,7 +8,7 @@ public protocol Approach {
     }
 }
 
-public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks {
+public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks    {
     public var drawbacks: [String] = {
         var tmp = [String]()
         tmp.append("blind to insidious problems")
