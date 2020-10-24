@@ -27,6 +27,10 @@ public struct Agitated: Emotion {
 
 public struct Curious: Emotion {
     public init() {}
+    
+    public var indicates: Any? = Something_Different()
+    
+    public struct Something_Different {}
 }
 
 struct Concerned: Emotion {
@@ -51,5 +55,3 @@ public protocol Flow {}
 public protocol Timing {}
 
 public protocol Venturing {}
-
-public protocol MicroEnvironment {}
