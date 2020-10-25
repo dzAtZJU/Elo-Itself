@@ -25,6 +25,14 @@ public struct Agitated: Emotion {
     public struct Not_Satisfied {}
 }
 
+public struct Negate_Self: Emotion {
+    public init() {}
+    
+    public var indicates: Any? = Ideal_Reality_Clash()
+    
+    public struct Ideal_Reality_Clash {}
+}
+
 public struct Curious: Emotion {
     public init() {}
     
