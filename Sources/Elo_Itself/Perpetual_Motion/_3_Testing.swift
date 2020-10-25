@@ -32,7 +32,7 @@ struct Custom_Interview {
     
     var infos: [Info] = [.PastBehaviors_insteadof_FutureBehaviors, .ActualSelf_insteadof_IdealSelf]
     
-    var opinion_to_data: [Opinion_to_Data] = [._50_Persons]
+    var opinion_to_data: [Opinion_to_Data] = [._2_as_a_Round, ._50_Persons]
     
     enum Feeling {
         case Pull_insteadof_push
@@ -47,6 +47,7 @@ struct Custom_Interview {
     }
     
     enum Opinion_to_Data {
+        case _2_as_a_Round
         case _50_Persons
     }
 }
