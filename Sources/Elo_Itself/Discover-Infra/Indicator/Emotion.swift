@@ -2,7 +2,7 @@ public protocol Emotion: Indicator {}
 
 public struct Anxious: Emotion {
     public init() {}
-    public var indicates: Any? = Unknown_by_Thinking()
+    public var indicates: [Indicatee] = [Unknown_by_Thinking()]
 }
 
 public struct Creative_Desire: Emotion {
@@ -12,33 +12,33 @@ public struct Creative_Desire: Emotion {
 public struct Repulsion: Emotion {
     public init() {}
     
-    public var indicates: Any? = Not_Immediate()
+    public var indicates: [Indicatee] = [Not_Immediate(), 感情冷淡期()]
     
-    public struct Not_Immediate {}
+    public struct Not_Immediate: Indicatee {}
 }
 
 public struct Agitated: Emotion {
     public init() {}
     
-    public var indicates: Any? = Not_Satisfied()
+    public var indicates: [Indicatee] = Not_Satisfied()
     
-    public struct Not_Satisfied {}
+    public struct Not_Satisfied: Indicatee {}
 }
 
 public struct Negate_Self: Emotion {
     public init() {}
     
-    public var indicates: Any? = Ideal_Reality_Clash()
+    public var indicates: [Indicatee] = [Ideal_Reality_Clash()]
     
-    public struct Ideal_Reality_Clash {}
+    public struct Ideal_Reality_Clash: Indicatee {}
 }
 
 public struct Curious: Emotion {
     public init() {}
     
-    public var indicates: Any? = Something_Different()
+    public var indicates: [Indicatee] = Something_Different()
     
-    public struct Something_Different {}
+    public struct Something_Different: Indicatee {}
 }
 
 struct Concerned: Emotion {
