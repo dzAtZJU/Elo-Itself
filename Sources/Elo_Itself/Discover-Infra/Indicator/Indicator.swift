@@ -1,10 +1,13 @@
 public protocol Indicator: Flow {
-    var indicates: Any? {
+    var indicates: [Indicatee] {
         get
     }
 }
+
+public protocol Indicatee {}
+
 public extension Indicator {
-    var indicates: Any? {
-        nil
+    var indicates: [Indicatee] {
+        []
     }
 }
