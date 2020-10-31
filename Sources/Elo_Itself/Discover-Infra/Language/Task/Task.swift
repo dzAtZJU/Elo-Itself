@@ -46,6 +46,10 @@ public protocol Operable {
     }
 }
 public extension Operable {
+    var handler: [Task] {
+        []
+    }
+    
     var consequence_of_failing: Any? {
         nil
     }

@@ -20,7 +20,7 @@ public struct Repulsion: Emotion {
 public struct Agitated: Emotion {
     public init() {}
     
-    public var indicates: [Indicatee] = Not_Satisfied()
+    public var indicates: [Indicatee] = [Not_Satisfied()]
     
     public struct Not_Satisfied: Indicatee {}
 }
@@ -36,7 +36,7 @@ public struct Negate_Self: Emotion {
 public struct Curious: Emotion {
     public init() {}
     
-    public var indicates: [Indicatee] = Something_Different()
+    public var indicates: [Indicatee] = [Something_Different()]
     
     public struct Something_Different: Indicatee {}
 }
