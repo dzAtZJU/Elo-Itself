@@ -56,8 +56,16 @@ public extension Operable {
 }
 
 public protocol IndividualAble: Task {}
+
 public protocol SymbiosisAble: Task {}
+
 public protocol Humankindable: Task {}
+
+public protocol Require_Cultivating_and_Nurturing {
+    var cultivating_and_nurturing: [Task] {
+        get
+    }
+}
 
 public protocol Plant {}
 public protocol Earthquake {}
