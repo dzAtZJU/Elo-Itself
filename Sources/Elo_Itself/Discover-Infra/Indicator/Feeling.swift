@@ -9,6 +9,10 @@ public extension Feeling {
     }
 }
 
+public struct Tired: Feeling {
+    public init() {}
+}
+
 public struct DeadLocking: Feeling {
     public init() {}
 }
