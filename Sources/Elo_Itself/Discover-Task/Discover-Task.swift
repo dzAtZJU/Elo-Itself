@@ -1,4 +1,6 @@
-struct Follow_Current_Minor_Feeling: Task {
+public struct Follow_Current_Minor_Feeling: Task {
+    public init() {}
+    
     var elements: [Indicator] = {
         var tmp = [Indicator]()
         tmp.append(Repulsion())
