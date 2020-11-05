@@ -4,6 +4,7 @@ public struct Follow_Current_Minor_Feeling: Task {
     var elements: [Indicator] = {
         var tmp = [Indicator]()
         tmp.append(Repulsion())
+        tmp.append(Waiting())
         tmp.append(Agitated())
         tmp.append(Negate_Self())
         tmp.append(DeadLocking())
