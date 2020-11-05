@@ -41,11 +41,11 @@ public struct Curious: Emotion {
     public struct Something_Different: Indicatee {}
 }
 
-struct Concerned: Emotion {
+public struct Concerned: Emotion {
     public init() {}
 }
 
-struct Waiting: Emotion {
+public struct Waiting: Emotion {
     public init() {}
 }
 
