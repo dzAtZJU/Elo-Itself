@@ -9,6 +9,14 @@ public extension Feeling {
     }
 }
 
+public struct Emptiness: Feeling {
+    public init() {}
+    
+    public var indicates: Any? = Cleard_Enough_For_Next()
+    
+    public struct Cleard_Enough_For_Next {}
+}
+
 public struct Tired: Feeling {
     public init() {}
 }
