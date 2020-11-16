@@ -17,6 +17,10 @@ public struct Emptiness: Feeling {
     public struct Cleard_Enough_For_Next {}
 }
 
+public struct DriedUp: Feeling {
+    public init() {}
+}
+
 public struct Tired: Feeling {
     public init() {}
 }
