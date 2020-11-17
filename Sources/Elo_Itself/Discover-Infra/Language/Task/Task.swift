@@ -44,6 +44,10 @@ public protocol Operable {
     var consequence_of_failing: Any? {
         get
     }
+    
+    var cause: [Any] {
+        get
+    }
 }
 public extension Operable {
     var handler: [Task] {
@@ -52,6 +56,10 @@ public extension Operable {
     
     var consequence_of_failing: Any? {
         nil
+    }
+    
+    var cause: [Any] {
+        []
     }
 }
 

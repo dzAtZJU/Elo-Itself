@@ -9,6 +9,10 @@ public struct Comparative: Approach {
     public var constrainedBy: [Tool] = []
 }
 
+public struct Training: Task, Resource {
+    public init() {}
+}
+
 public struct Experiment: Task, Approach, Has_Tasks {
     public init() {}
     

@@ -17,3 +17,12 @@ public struct Follow_Current_Minor_Feeling: Task {
 public struct Open_to_Wander_Away: Task, Under_Expectation {
     public init() {}
 }
+
+public struct Reflection: Task {
+    var startingPoint: [String] = {
+        var tmp = [String]()
+        tmp.append("Feeling")
+        tmp.append("Situation")
+        return tmp
+    }()
+}
