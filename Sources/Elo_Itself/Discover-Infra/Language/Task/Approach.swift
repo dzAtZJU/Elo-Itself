@@ -31,3 +31,4 @@ public struct Cultivating_and_Nurturing: Approach, Has_Criterias, Invest {
         constrainedBy = tools
     }
 }
+
