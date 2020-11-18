@@ -17,7 +17,7 @@ extension Approach {
     }
 }
 
-public struct Cultivating_and_Nurturing: Approach, Has_Criterias {
+public struct Cultivating_and_Nurturing: Approach, Has_Criterias, Invest {
     public var criterias: [Any] = {
         var tmp = [String]()
         tmp.append("Little by Little")
