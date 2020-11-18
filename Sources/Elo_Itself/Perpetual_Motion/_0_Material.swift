@@ -23,3 +23,7 @@ public struct Struggling_Period: Under_Expectation {
 public struct Little_Investment_from_TheOther_at_the_Begining: Under_Expectation {
     public init() {}
 }
+
+public struct Aesthetic: Under_Expectation {
+    public init() {}
+}
