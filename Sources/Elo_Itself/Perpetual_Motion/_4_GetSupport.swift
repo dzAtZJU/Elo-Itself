@@ -1,5 +1,5 @@
-public struct GetSupport: Require_Investment {
-    public var investment: [Invest] = [BuildTrust()]
+public struct GetSupport: Require_Investing {
+    public var investings: [Invest] = [BuildTrust()]
 }
 
 struct BuildTrust: Invest {

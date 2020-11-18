@@ -86,8 +86,10 @@ struct Subversion: Earthquake {}
 
 public protocol Invest: IndividualAble {}
 
-public protocol Require_Investment {
-    var investment: [Invest] {
+public protocol Require_Investing {
+    var investings: [Invest] {
         get
     }
 }
+
+public protocol Training: Humankindable {}

@@ -25,5 +25,9 @@ public struct Cultivating_and_Nurturing: Approach, Has_Criterias {
         return tmp
     }()
     
-    public init() {}
+    public var constrainedBy: [Tool]
+        
+    public init(tools: [Tool] = []) {
+        constrainedBy = tools
+    }
 }
