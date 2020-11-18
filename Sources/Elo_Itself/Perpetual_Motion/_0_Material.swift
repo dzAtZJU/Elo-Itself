@@ -1,5 +1,11 @@
 public protocol Material {}
 
+public protocol Has_Materials {
+    var materials: [Material] {
+        get
+    }
+}
+
 public protocol Steady_Source: Material {}
 
 public protocol Under_Expectation: Material {}
