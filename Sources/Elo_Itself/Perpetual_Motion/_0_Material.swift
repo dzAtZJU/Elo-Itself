@@ -10,6 +10,8 @@ public protocol Steady_Source: Material {}
 
 public protocol Under_Expectation: Material {}
 
+public protocol Self_Belief {}
+
 public struct Unknowable_and_Uncertain_Situations: Under_Expectation {
     public init() {}
 }
