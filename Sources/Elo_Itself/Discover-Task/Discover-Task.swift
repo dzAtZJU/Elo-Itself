@@ -14,10 +14,6 @@ public struct Follow_Current_Minor_Feeling: Task {
     }()
 }
 
-public struct Open_to_Wander_Away: Task, Under_Expectation {
-    public init() {}
-}
-
 public struct Reflection: Task {
     var startingPoint: [String] = {
         var tmp = [String]()
@@ -25,4 +21,14 @@ public struct Reflection: Task {
         tmp.append("Situation")
         return tmp
     }()
+}
+
+public struct Open_to_Wander_Away: Task, Under_Expectation {
+    public init() {}
+}
+
+struct Rough_and_Tumble: Task {}
+
+struct Notice_Its_Situation_Handling: Task, Has_Criterias {
+    var criterias: [Any] = [Temperament()]
 }

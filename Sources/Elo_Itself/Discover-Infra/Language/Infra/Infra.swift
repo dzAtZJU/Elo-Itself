@@ -16,10 +16,23 @@ public protocol Require_Infras {
     }
 }
 
+// Way-Of-Constructing is different for each kind of infra.
 public enum Infra_Type {
     case Language
-    case App
     case Community
+    case App
     case Rule
     case Policy
+}
+
+public struct Language: Infra {
+    public init() {}
+    
+    let formation = "From individual oriented utopia to civilization sedimentation."
+    let usage = "Forces reality and implementation."
+        
+    enum PublicWorld {
+        case Language
+        case Space
+    }
 }

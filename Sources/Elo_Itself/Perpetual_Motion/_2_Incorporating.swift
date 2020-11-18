@@ -1,13 +1,3 @@
-public protocol Approach {
-    var constrainedBy: [Tool] {
-        get
-    }
-    
-    var legitimacy: String {
-        get
-    }
-}
-
 public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks    {
     public var drawbacks: [String] = {
         var tmp = [String]()
@@ -45,17 +35,17 @@ public protocol Require_Detach_and_Witness {
 struct Add_Connection: Approach, Has_Criterias {
     var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
     
+    var constrainedBy: [Tool] = []
+    
     var criterias: [Any] = {
         var tmp = [String]()
         tmp.append("guided by my view of life and values")
         return tmp
     }()
     
-    var constrainedBy: [Tool] = []
-    
     enum Principle: String {
         case Relentless_ConnectionTransparency = "Even for those new small edges which are easy for brain"
-        case Elo_the_Language = "Stimulated by individuals going through situation. Shaped by reality."
+        case Elo = "Stimulated by individuals going through situation. Shaped by reality."
     }
 }
 

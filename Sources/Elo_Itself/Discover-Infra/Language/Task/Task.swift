@@ -3,6 +3,10 @@ public protocol Task {
         get
     }
     
+    var approaches: [Approach] {
+        get
+    }
+    
     var resources: [Resource] {
         get
     }
@@ -10,6 +14,10 @@ public protocol Task {
 
 public extension Task {
     var perspectives: [Perspective] {
+        []
+    }
+    
+    var approaches: [Approach] {
         []
     }
     
@@ -69,15 +77,17 @@ public protocol SymbiosisAble: Task {}
 
 public protocol Humankindable: Task {}
 
-public protocol Require_Cultivating_and_Nurturing {
-    var cultivating_and_nurturing: [Task] {
-        get
-    }
-}
-
 public protocol Plant {}
 public protocol Earthquake {}
 
 struct Bloom: Plant {}
 
 struct Subversion: Earthquake {}
+
+public protocol Invest: IndividualAble {}
+
+public protocol Require_Investment {
+    var investment: [Invest] {
+        get
+    }
+}
