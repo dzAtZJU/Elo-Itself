@@ -49,6 +49,9 @@ public struct Waiting: Emotion {
     public init() {}
 }
 
+public struct Depression: Emotion {
+    public init() {}
+}
 // MARK: Emotion Infra
 public protocol TemporalSpace {}
 

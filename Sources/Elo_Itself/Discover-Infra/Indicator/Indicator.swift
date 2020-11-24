@@ -12,6 +12,6 @@ public extension Indicator {
     }
 }
 
-public struct 感情冷淡期: Indicatee, Operable {
+public struct 感情冷淡期: Indicatee {
     public init() {}
 }
