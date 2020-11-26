@@ -1,5 +1,5 @@
 public protocol Phenomena {
-    var humankindable: Humankindable? {
+    public var humankindable: Humankindable? {
         get
     }
 }
