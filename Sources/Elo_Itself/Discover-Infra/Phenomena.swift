@@ -9,9 +9,11 @@ extension Phenomena {
     }
 }
 
-struct Unknown_by_Thinking: Phenomena, Indicatee {} 
+public struct Unknown_by_Thinking: Phenomena, Indicatee {
+    public init() {}
+}
 
-protocol IsSpectrum {
+public protocol IsSpectrum {
     var bands: [Any] {
         get
     }
