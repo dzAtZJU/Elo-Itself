@@ -11,4 +11,8 @@ extension Phenomena {
 
 struct Unknown_by_Thinking: Phenomena, Indicatee {} 
 
-
+protocol IsSpectrum {
+    var bands: [Any] {
+        get
+    }
+}
