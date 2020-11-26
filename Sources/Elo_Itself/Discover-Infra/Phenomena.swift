@@ -1,10 +1,10 @@
 public protocol Phenomena {
-    public var humankindable: Humankindable? {
+    var humankindable: Humankindable? {
         get
     }
 }
 extension Phenomena {
-    var humankindable: Humankindable? {
+    public var humankindable: Humankindable? {
         nil
     }
 }
