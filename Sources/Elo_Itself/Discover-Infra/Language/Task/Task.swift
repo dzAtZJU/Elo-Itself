@@ -73,6 +73,8 @@ public extension Operable {
 
 public protocol IndividualAble: Task {}
 
+public protocol Initiative: Task {}
+
 public protocol SymbiosisAble: Task {}
 
 public protocol Humankindable: Task {}

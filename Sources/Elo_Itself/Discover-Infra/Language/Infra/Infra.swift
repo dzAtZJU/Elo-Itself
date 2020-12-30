@@ -16,6 +16,8 @@ public protocol Require_Infras {
     }
 }
 
+public protocol Encourage: Infra {}
+    
 // Way-Of-Constructing is different for each kind of infra.
 public enum Infra_Type {
     case Language
