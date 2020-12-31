@@ -10,8 +10,6 @@ public protocol Steady_Source: Material {}
 
 public protocol Under_Expectation: Material {}
 
-public protocol Opportunity: Material {}
-
 public protocol Self_Belief {}
 
 public struct SocialNetwork: Steady_Source {}

@@ -22,15 +22,7 @@ public struct Semantic_Discrimination: Approach, Task, Has_Drawbacks    {
     }
 }
 
-public protocol Require_Detach_and_Witness {
-    var semantic_product: String? {
-        get
-    }
-    
-    var obstacles: [String] {
-        get
-    }
-}
+public struct Detach_and_Witness: Approach {}
 
 struct Add_Connection: Approach, Has_Criterias {
     var legitimacy = "Fresh materials are valuable, BUT Only during Connection, Impression is strengthened, Inspiration comes, and Innovation wil finally be born. And ONLY a concept can be incorporated into the net, is this concept meaningful."
