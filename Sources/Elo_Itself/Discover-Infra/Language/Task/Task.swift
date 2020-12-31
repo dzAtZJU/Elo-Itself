@@ -1,4 +1,8 @@
 public protocol Task {
+    var criterias: [Criteria] {
+        get
+    }
+    
     var perspectives: [Perspective] {
         get
     }
@@ -13,6 +17,10 @@ public protocol Task {
 }
 
 public extension Task {
+    var criterias: [Criteria] {
+        []
+    }
+    
     var perspectives: [Perspective] {
         []
     }

@@ -8,6 +8,14 @@ public protocol Attribute {
         get
     }
 }
+public extension Criteria {
+    var succeed: [Attribute] {
+        []
+    }
+    var infra: [Infra] {
+        []
+    }
+}
 
 public protocol Require_Attributes {
     var attributes: [Attribute] {
@@ -65,23 +73,8 @@ public enum Effect {
     case Decrease
 }
 
-public enum Satisfaction {
-    case nice
-    case ok
-    case terrible
-}
-
-public enum CostType {
-    case Money(Satisfaction)
-    case Efforts(Satisfaction)
-}
-
-public struct Cost {
-    public var money: CostType
-    public var efforts: CostType
-    
-    public init(money: Satisfaction, efforts: Satisfaction) {
-        self.money = .Money(money)
-        self.efforts = .Efforts(efforts)
-    }
+public enum Cost: Criteria {
+    case Time
+    case Efforts
+    case Money
 }
