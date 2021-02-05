@@ -1,15 +1,4 @@
-public protocol Phenomena {
-    var humankindable: Humankindable? {
-        get
-    }
-}
-extension Phenomena {
-    public var humankindable: Humankindable? {
-        nil
-    }
-}
-
-public struct Unknown_by_Thinking: Phenomena, Indicatee {
+public struct Unknown_by_Thinking: Indicatee {
     public init() {}
 }
 
@@ -19,11 +8,10 @@ public protocol IsSpectrum {
     }
 }
 
-public protocol Ideal: Phenomena {}
-public protocol Reality: Phenomena {}
-public protocol Justice: Phenomena {}
+public protocol Ideal {}
+public protocol Reality {}
+public protocol Justice {}
 
-public protocol Opportunity: Phenomena, Require_Markets, Material {}
 public protocol Market {}
 public protocol Require_Markets {
     var markets: [Market] {
@@ -36,5 +24,5 @@ public extension Require_Markets {
     }
 }
 
-public protocol Competition: Phenomena {}
+public protocol Competition {}
 
