@@ -14,3 +14,9 @@ public struct Eye: Perspective {
 public struct Empathy: Perspective {
     public let items: [String] = ["Capture Emotion Flow"]
 }
+
+public struct Mind: Perspective {
+    public var drawbacks: [String] = [
+        "需要及时限制边界"
+    ]
+}
