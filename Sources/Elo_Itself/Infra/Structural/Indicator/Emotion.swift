@@ -2,7 +2,7 @@ public protocol Emotion: Indicator {}
 
 public struct Anxious: Emotion {
     public init() {}
-    public var indicates: [Indicatee] = [Unknown_by_Thinking()]
+    public var indicates: [Indicatee] = []
 }
 
 public struct Creative_Desire: Emotion {

@@ -13,6 +13,7 @@ public struct Eye: Perspective {
 
 public struct Empathy: Perspective {
     public let items: [String] = ["Capture Emotion Flow"]
+    public var drawbacks: [String] = []
 }
 
 public struct Mind: Perspective {

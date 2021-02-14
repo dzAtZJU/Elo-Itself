@@ -34,9 +34,7 @@ public struct Disappointed: Feeling, Has_PreventiveTasks {
     
     public var indicates: Any? = Nothing_BothSides_CanDo()
     
-    public struct Nothing_BothSides_CanDo: Require_Infras {
-        public var infras: [Infra] = [Soul_Mesh_and_Fit()]
-    }
+    public struct Nothing_BothSides_CanDo {}
     
     public var preventiveTasks: [Task] = [Open_to_Wander_Away()]
 }

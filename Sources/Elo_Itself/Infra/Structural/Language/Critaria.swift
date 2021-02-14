@@ -17,3 +17,7 @@ public protocol Has_Drawbacks {
         get
     }
 }
+
+public struct DDL: Criteria {
+    public init() {}
+}

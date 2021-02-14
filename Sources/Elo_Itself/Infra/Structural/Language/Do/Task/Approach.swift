@@ -32,3 +32,7 @@ public struct Cultivating_and_Nurturing: Approach, Has_Criterias {
     }
 }
 
+public struct SqueezesTime: Approach {
+    public init() {}
+    
+}

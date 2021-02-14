@@ -18,7 +18,9 @@ public protocol Task {
 
 public extension Task {
     var criterias: [Criteria] {
-        []
+        [
+            DDL()
+        ]
     }
     
     var perspectives: [Perspective] {
@@ -26,7 +28,9 @@ public extension Task {
     }
     
     var approaches: [Approach] {
-        []
+        [
+            SqueezesTime()
+        ]
     }
     
     var resources: [Resource] {
